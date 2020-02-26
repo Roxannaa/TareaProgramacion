@@ -54,9 +54,9 @@ namespace TareaProg4
             //   consumerKey: "",
             //   consumerSecret: "");
 
-            //app.UseFacebookAuthentication(
-            //   appId: "",
-            //   appSecret: "");
+            app.UseFacebookAuthentication(
+               appId: "656813908387622",
+               appSecret: "01195a6a91edde1c30e46c30142d7c08");
 
             //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
             //{
