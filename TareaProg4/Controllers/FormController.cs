@@ -9,7 +9,7 @@ namespace TareaProg4.Controllers
     public class FormController : Controller
     {
         // GET: Form
-        public ActionResult Index()
+        public ActionResult Formulario()
         {
             return View();
         }
