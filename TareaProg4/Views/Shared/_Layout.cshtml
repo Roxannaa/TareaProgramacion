@@ -17,14 +17,15 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Application name", "Formulario", "Form", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("Tarea 4", "Formulario", "Form", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Formulario", "Formulario", "Form")</li>
                     <li>@Html.ActionLink("Datos del Formulario", "Datos", "Form")</li>
+                    <li>@Html.ActionLink("Conversor de unidades", "Opciones", "Conversor")</li>
                 </ul>
-                @Html.Partial("_LoginPartial")
+                 
             </div>
         </div>
     </div>
