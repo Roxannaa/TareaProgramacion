@@ -172,6 +172,7 @@
     <Compile Include="Controllers\FormController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\PelisCategoriasController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -239,9 +240,16 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Form\Formulario.cshtml" />
     <Content Include="Views\Contenido\Index.cshtml" />
+    <Content Include="Views\Contenido\Peliculas.cshtml" />
+    <Content Include="Views\PelisCategorias\Accion.cshtml" />
+    <Content Include="Views\PelisCategorias\Aventura.cshtml" />
+    <Content Include="Views\PelisCategorias\Drama.cshtml" />
+    <Content Include="Views\PelisCategorias\Infantil.cshtml" />
+    <Content Include="Views\PelisCategorias\Documental.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Peliculas\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
