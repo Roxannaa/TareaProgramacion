@@ -247,6 +247,7 @@
     <Content Include="Views\PelisCategorias\Drama.cshtml" />
     <Content Include="Views\PelisCategorias\Infantil.cshtml" />
     <Content Include="Views\PelisCategorias\Documental.cshtml" />
+    <Content Include="Views\Form\Datos.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

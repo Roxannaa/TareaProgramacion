@@ -1,7 +1,67 @@
 ﻿
+@model TareaProg4.Models.Campos
+@using TareaProg4.Models
+
 @{
     ViewBag.Title = "Formulario";
 }
 
 <h2>Formulario</h2>
 
+@using (Html.BeginForm("Datos", "Form", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <div>
+        @Html.LabelFor(a => a.Cedula)
+        @Html.TextBoxFor(a => a.Cedula, "", new { placeholder = "Ej. 40278796590", @class = "form-control" })
+        @Html.ValidationMessageFor(a => a.Cedula, "", new { @class = "text-danger" })
+    </div>
+
+    <div>
+        @Html.LabelFor(a => a.Nombre)
+        @Html.TextBoxFor(a => a.Nombre, "", new { placeholder = "Ej. Maria", @class = "form-control" })
+        @Html.ValidationMessageFor(a => a.Nombre, "", new { @class = "text-danger" })
+    </div>
+
+    <div>
+        @Html.LabelFor(a => a.Apellido)
+        @Html.TextBoxFor(a => a.Apellido, "", new { placeholder = "Ej. Hernandez", @class = "form-control" })
+        @Html.ValidationMessageFor(a => a.Apellido, "", new { @class = "text-danger" })
+    </div>
+
+    <div>
+        @Html.LabelFor(a => a.Edad)
+        @Html.TextBoxFor(a => a.Edad, "", new { placeholder = "Ej. 19", @class = "form-control" })
+        @Html.ValidationMessageFor(a => a.Edad, "", new { @class = "text-danger" })
+    </div>
+
+    <div>
+        @Html.LabelFor(a => a.Telefono)
+        @Html.TextBoxFor(a => a.Telefono, "", new { placeholder = "Ej. 8090000000", @class = "form-control" })
+    </div>
+
+    <div>
+        @Html.LabelFor(a => a.Correo)
+        @Html.TextBoxFor(a => a.Correo, "", new { placeholder = "Ej. maria@gmail.com", @class = "form-control" })
+        @Html.ValidationMessageFor(a => a.Correo, "", new { @class = "text-danger" })
+    </div>
+
+    <div>
+        @Html.LabelFor(a => a.Genero)
+        @Html.DropDownListFor(z => z.Genero, new SelectList(Enum.GetValues(typeof(Gender))), "Selecciona Tu Genero ", new { @class = "form-control" })<br />
+    </div>
+
+    <div>
+        @Html.LabelFor(a => a.Puesto)
+        @Html.TextBoxFor(a => a.Puesto, "", new { placeholder = "Ej. Diseñador Web", @class = "form-control" })
+    </div>
+
+    <div>
+        @Html.Label("Coloca una foto tuya aqui:")
+        <input type="file" name="imagen" /> <br />
+
+        @Html.Label("Suba su Curriculum formato pdf aqui:")
+        <input type="file" name="cv" /> <br />
+    </div>
+
+    <input type="submit" value="ENVIAR" class="btn" />
+}
