@@ -17,5 +17,9 @@ namespace TareaProg4.Controllers
         {
             return View();
         }
+        public ActionResult Musica()
+        {
+            return View();
+        }
     }
 }
