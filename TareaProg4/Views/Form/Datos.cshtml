@@ -1,7 +1,17 @@
-﻿
+﻿@model TareaProg4.Models.Campos
 @{
     ViewBag.Title = "Datos";
 }
 
 <h2>Datos</h2>
 
+<img src="~/img/@ViewBag.foto" width="400" height="400" />
+<h3>Cedula: @Model.Cedula</h3>
+<h3>Nombre: @Model.Nombre</h3>
+<h3>Apellido: @Model.Apellido</h3>
+<h3>Edad: @Model.Edad</h3>
+<h3>Telefono: @Model.Telefono</h3>
+<h3>Correo: @Model.Correo</h3>
+<h3>Genero: @Model.Genero</h3>
+<h3>Puesto: @Model.Puesto</h3>
+<h3>Curriculum:</h3>
