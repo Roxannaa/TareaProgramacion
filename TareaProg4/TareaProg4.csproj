@@ -168,6 +168,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AcercaDeController.cs" />
     <Compile Include="Controllers\ContenidoController.cs" />
     <Compile Include="Controllers\ConversorController.cs" />
     <Compile Include="Controllers\FormController.cs" />
@@ -257,6 +258,7 @@
     <Content Include="Views\Form\Datos.cshtml" />
     <Content Include="Views\Conversor\Opciones.cshtml" />
     <Content Include="Views\Contenido\Musica.cshtml" />
+    <Content Include="Views\AcercaDe\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
