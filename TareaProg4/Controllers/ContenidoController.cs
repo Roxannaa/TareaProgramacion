@@ -13,6 +13,11 @@ namespace TareaProg4.Controllers
         {
             return View();
         }
+
+        public ActionResult Noticias()
+        {
+            return View();
+        }
         public ActionResult Peliculas()
         {
             return View();
@@ -21,5 +26,6 @@ namespace TareaProg4.Controllers
         {
             return View();
         }
+        
     }
 }

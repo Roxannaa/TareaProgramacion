@@ -259,6 +259,7 @@
     <Content Include="Views\Conversor\Opciones.cshtml" />
     <Content Include="Views\Contenido\Musica.cshtml" />
     <Content Include="Views\AcercaDe\Index.cshtml" />
+    <Content Include="Views\Contenido\Noticias.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
